@@ -23,11 +23,16 @@ public class CubeEditor : Editor
             cube.Reset();
         }
         
-        if (GUILayout.Button("Spawn Cube"))
+        if (GUILayout.Button("Duplicate"))
         {
-            cube.SpawnCube();
+            cube.Duplicate();
         }
-        
+
+        if (GUILayout.Button("Make Wall"))
+        {
+            cube.MakeWall();
+        }
+
         GUILayout.EndHorizontal();
     }
 }
